@@ -25,5 +25,5 @@ This is a barely-functional ATM built for a coding challenge.
     or
   npm run demo-windows or yarn demo-windows (if on Windows)  
   ```
-* Your browser window should open up to localhost:3000 and you should now be
+* Your browser window should open up to localhost:3001 and you should now be
   able to enter in a pin (4 characters) and check a balance from a server. I ran out of time to implement the rest of the functionality.
