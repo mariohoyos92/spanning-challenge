@@ -10,7 +10,7 @@
     background-image: url("../../../assets/creditcard_sprite.png");
     background-repeat: no-repeat;
     background-position: center;
-
+    
     height: 50px;
 }
 
@@ -25,6 +25,30 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+}
+
+.screen input {
+     margin-top: 10px;
+}
+
+.choices-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 47px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+}
+.choices p {
+    padding: 5px 5px;
+}
+
+.right {
+    text-align: right;
 }
 
 #spanning-systems-logo {

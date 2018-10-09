@@ -5,9 +5,15 @@ const { json } = require("body-parser");
 const app = express();
 app.use(json());
 
-app.use("/test", (req, res) => {
+const creditCard = {
+    balance: 1200
+}
+
+
+app.use("/balance", (req, res) => {
     res.status(200).json({
-        status: "success!"
+        status: "success",
+        balance: creditCard.balance
     })
 })
 
