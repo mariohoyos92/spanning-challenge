@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Top from '../Top/Top';
-import Console from '../MainConsole/Console/Console'
+import Top from "../Top/Top";
+import Console from "../MainConsole/Console/Console";
 
-import './App.css';
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -13,7 +13,6 @@ class App extends Component {
           <Top />
           <Console />
         </div>
-
       </div>
     );
   }
