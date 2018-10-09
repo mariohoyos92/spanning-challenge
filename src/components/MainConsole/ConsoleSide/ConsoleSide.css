@@ -1,0 +1,17 @@
+.console {
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 128px 0;
+}
+
+.console button {
+    width: 32px;
+    height: 21px;
+    border-radius: 3px;
+    background-color: rgb(193, 193, 193);
+    border: solid rgb(209, 209, 209) 1px;
+    border-bottom: solid rgb(150, 150, 150) 2px;
+}

@@ -1,0 +1,82 @@
+.console-center {
+    width: 251px;
+}
+
+.color-changer {
+    position: absolute;
+    height: 29px;
+    width: 262px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter {
+    height: 30px;
+    width: 44px;
+}
+.inactive{
+    background-color: rgba(190, 190, 190, 0.9);
+}
+
+.sprite-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/creditcard_sprite.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 50px;
+}
+
+.screen {
+    box-sizing: border-box;
+    height: 195px;
+    border: 4px solid;
+    border-color:rgb(225, 225, 214);
+    margin-top: -22px;
+    background-color: rgb(128, 180, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.screen input {
+     margin-top: 10px;
+}
+
+.choices-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 47px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+}
+
+.choices p {
+    padding: 5px 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+#spanning-systems-logo {
+    width: 112px;
+    height: 6px;
+    float: right;
+    margin-top: 5px;
+}
+
+#sticker-graffiti {
+    position: absolute;
+    left: 7%;
+    bottom: 2%;
+}
