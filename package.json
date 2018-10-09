@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "demo": "node server/index.js | node scripts/demo.js",
+    "demo-windows": "start node server/index.js && start node scripts/demo.js"
   },
   "eslintConfig": {
     "extends": "react-app"
