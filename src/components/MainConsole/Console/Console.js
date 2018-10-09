@@ -14,6 +14,7 @@ class Console extends Component {
             balance: 0,
             deposit: 0,
             withdraw: 0,
+            cardToActivate: Math.floor(Math.random() * 6)
         }
     }
 
@@ -39,6 +40,7 @@ class Console extends Component {
                 balance: 0,
                 deposit: 0,
                 withdraw: 0,
+                cardToActivate: Math.floor(Math.random() * 6)
             })
         }
         if (name === "balance") {
@@ -56,13 +58,13 @@ class Console extends Component {
     }
 
     render() {
-        const { pin, currentScreen, toDeposit, toWithdraw, balance } = this.state;
+        const { pin, currentScreen, toDeposit, toWithdraw, balance, cardToActivate } = this.state;
         return (
             <div className="atm-machine-wrapper">
                 <div className="sign-shade" />
                 <div className="main-console" onClick={this.handleClick} onChange={this.handleChange}>
                     <ConsoleSide currentScreen={currentScreen} side="left" />
-                    <ConsoleCenter currentScreen={currentScreen} toDeposit={toDeposit} toWithdraw={toWithdraw} balance={balance} pin={pin} />
+                    <ConsoleCenter currentScreen={currentScreen} toDeposit={toDeposit} toWithdraw={toWithdraw} balance={balance} pin={pin} cardToActivate={cardToActivate} />
                     <ConsoleSide currentScreen={currentScreen} side="right" />
                 </div>
             </div>

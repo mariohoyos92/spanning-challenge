@@ -5,7 +5,7 @@ import stickerGraf from "../../../assets/sticker_graf.png"
 
 import "./ConsoleCenter.css"
 
-export default function ConsoleCenter({ currentScreen, balance }) {
+export default function ConsoleCenter({ currentScreen, balance, cardToActivate }) {
     const headers = {
         login: "Please Enter Your Pin",
         withdraw: "Amount To Withdraw",
@@ -47,9 +47,13 @@ export default function ConsoleCenter({ currentScreen, balance }) {
     }
 
     return (<div className="console-center">
+        {currentScreen !== "login" &&
+            <div className="color-changer">
+                {Array.apply(null, Array(6)).map((item, i) => <div className={`filter ${cardToActivate === i + 1 ? '' : "inactive"}`} />)}
+            </div>}
         <figure className="sprite-wrapper" />
         {renderScreen()}
         <img src={spanningSystems} alt="spanning systems logo" id="spanning-systems-logo" />
         <img src={stickerGraf} alt="sticker" id="sticker-graffiti" />
-    </div>)
+    </div >)
 }
